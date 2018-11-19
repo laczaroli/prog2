@@ -1,0 +1,8 @@
+Egy osztály létrehozásakor alapból létezik egy másoló rész, de ez annyiban különbözik
+attól amit mi szeretnénk, hogy ez ugyanazon a memóriacímen van, mint az eredeti objektum.
+Nekünk az volt a célunk, hogy különnböző memóriacímre kerüljenek, ezért létrehoztunk egy
+úgynevezett "mélymásoló konstruktort" ami az egész adatállományt átmásolja az egyik objektumból a
+a másik objektumba (címváltoztatással!!). 
+Az egésznek a lényege, hogy a konstruktorunk bekapja a saját konstruktorának referencia értékét,
+aztán ugyanúgy lefoglalunk a mutatóknak helyet a memóriában, és feltöltjük értékkel.
+A mozgató szemantika a forrás objektum memóriacímét törli (így magát az objektumot is), és egy teljesen új memóriacímen létrehozza ugyanazt az objektumot, amit törölt (csak ugye az egyik memóriacímről a másikra "mozgattuk" az adatokat).
