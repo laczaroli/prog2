@@ -1,10 +1,4 @@
 A program fordítása:
-<code>
 g++ tdk.cpp -o tdk -lboost_system -lboost_filesystem
-</code>
 Futtatás:
-<code>
 ./tdk [mappa neve]
-</code>
-
-Teljesen rekurzívan járja be a mappákat.
